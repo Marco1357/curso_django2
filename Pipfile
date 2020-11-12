@@ -8,6 +8,7 @@ flake8 = "*"
 
 [packages]
 gunicorn = "*"
+django = "*"
 
 [requires]
 python_version = "3.8"
