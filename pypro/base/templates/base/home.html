@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +24,8 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand" href="{% url 'base:home' %}">Python Pro</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -43,9 +44,32 @@
 				<h2>
 					Curso de Python com Luciano Ramalho
 				</h2>
-				<p>
-					Confira em breve mais informações sobre o curso.
-				</p>
+				<h4 class="mt-4"> Entre na fila de espera</h4>
+
+				<form action="https://magdjango.us1.list-manage.com/subscribe/post?u=bcdadb8b85f8d0687b858c353&amp;id=aff9d29d4d"
+	                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+	                    class="forn-row align-itens-center="_blank" novalidate>
+				    <div class="forn-row align-itens-center">
+						<div class="col-auto">
+							<label class="sr-only" for="mce-EMAIL">EMAIL</label>
+						    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"
+							placeholder="exomplo@email.com">
+					    </div>
+						<div class="col-auto">
+							<label class="sr-only" for="mce-EMAIL">EMAIL</label>
+						    <input type="text" value="" name="FNAME" class="forn-control" id="mce-FNAME" placeholder="Seu Nome">
+					    </div>
+
+							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input
+			                 type="text" name="b_bcdadb8b85f8d0687b858c353_aff9d29d4d" tabindex="-1" value=""></div>
+
+				        <div class="col-auto">
+						    <input type="submit" value="Salvar" name="subscribe"
+							   id="mc-embedded-subscribe" class="btn btn-primary">
+					    </div>
+                    </div>
+                </form>
 
 			</div>
 
@@ -75,17 +99,7 @@
 
 				        </button>
 
-					<ul class="navbar-nav ml-md-auto">
-						<li class="nav-item active">
-						</li>
-						<li class="nav-item dropdown">
-							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-								 <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a>
-								<div class="dropdown-divider">
-								</div> <a class="dropdown-item" href="#">Separated link</a>
-							</div>
-						</li>
-					</ul>
+
 				</div>
 
 			<div class="row">
