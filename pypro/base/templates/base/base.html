@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Python Pro</title>
+    <title>{% block title %}Python Pro{% endblock title %}</title>
 
-    <meta name="description" content="Página do curso Python Pro">
+    <meta name="description" content="{% block description %}Página do curso Python Pro{% endblock description %}">
     <meta name="author" content="Marco A. Garcia">
 
     <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}"/>
@@ -36,105 +36,7 @@
   </div>
 </nav>
 
-    <div class="container">
-	<div class="row">
-		<div class="col-md-12">
-
-			<div class="jumbotron">
-				<h2>
-					Curso de Python com Luciano Ramalho
-				</h2>
-				<h4 class="mt-4">Matriculas abertas! Curso R$ 1000,00</h4>
-				<!-- INICIO DO BOTAO PAGSEGURO -->
-				<a href="https://pag.ae/7W-iV9bS9/button"
-				   target="_blank" title="Pagar com PagSeguro">
-				<img src="//assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/205x30-pagar.gif"
-					 alt="Pague com PagSeguro - é rápido, grátis e seguro!" /></a>
-				<!-- FIM DO BOTAO PAGSEGURO -->
-<!--				<h4 class="mt-4"> Entre na fila de espera</h4>
-
-				<form action="https://magdjango.us1.list-manage.com/subscribe/post?u=bcdadb8b85f8d0687b858c353&amp;id=aff9d29d4d"
-	                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-	                    class="forn-row align-itens-center="_blank" novalidate>
-				    <div class="forn-row align-itens-center">
-						<div class="col-auto">
-							<label class="sr-only" for="mce-EMAIL">EMAIL</label>
-						    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"
-							placeholder="exomplo@email.com">
-					    </div>
-						<div class="col-auto">
-							<label class="sr-only" for="mce-EMAIL">EMAIL</label>
-						    <input type="text" value="" name="FNAME" class="forn-control" id="mce-FNAME" placeholder="Seu Nome">
-					    </div>
-
-							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-<!--                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input
-			                 type="text" name="b_bcdadb8b85f8d0687b858c353_aff9d29d4d" tabindex="-1" value=""></div>
-
-				        <div class="col-auto">
-						    <input type="submit" value="Salvar" name="subscribe"
-							   id="mc-embedded-subscribe" class="btn btn-primary">
-					    </div>
-                    </div>
-               </form>-->
-
-			</div>
-
-
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="navbar-toggler-icon"></span>
-			    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="navbar-nav">
-						<li class="nav-item active">
-							 <a class="nav-link" href="#">Link <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							 <a class="nav-link" href="#">Link</a>
-						</li>
-						<li class="nav-item dropdown">
-							 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown">Dropdown link</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								 <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a>
-								<div class="dropdown-divider">
-								</div> <a class="dropdown-item" href="#">Separated link</a>
-							</div>
-						</li>
-					</ul>
-					<form class="form-inline">
-						<input class="form-control mr-sm-2" type="text">
-                    </form>
-
-                    </div>
-				</button>
-
-
-
-
-			<div class="row">
-				<div class="col-md-12">
-					<div class="card">
-						<h5 class="card-header">
-							Mais detalhes sobre o instrutor
-						</h5>
-						<div class="card-body">
-							<p class="card-text">
-								<img src="{% static 'img/Ramalhoimg.png' %}" alt="Foto de Luciano Ramalho"
-									 class="img-thumbnail float-left mr-3"/>
-								Ramalho é sócio e professor na <a href="https://www.python.pro.br">Python Pro</a> e autor do Livro
-								Python Fluente. Foi diretor técnico do Brasil Online, primeiro portal da Abril S/A na Web.
-								Liderou times para os portais IDG Now, BOL, UOL, AOL Brasil e outros, usando Python desde 1998.
-								Como instrutor, atendeu clientes como Citibank, CPqD, Serpro, Presidência da República,
-								Globo.com e Itaú. Palestrante em eventos internacionais como FISL, PyCon US e OSCON. Ajudou a
-								criar a Associação Python Brasil e foi seu presidente. É membro da Python Software Foundation e
-								fundador do Garoa Hacker Clube, o primeiro hackerspace do Brasil.
-
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  {% block body %}{% endblock body %}
 
 <footer class="main-footer mt-5 pt-4 text-light">
 
