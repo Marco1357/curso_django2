@@ -1,4 +1,5 @@
 import pytest
+
 from django.urls import reverse
 
 from pypro.django_assertions import assert_contains
@@ -14,7 +15,7 @@ def test_status_code(resp):
 
 
 def test_titulo_video(resp):
-    assert_contains(resp, '<h1>Video Aperitivo: Motivaçao</h1>')
+    assert_contains(resp, '<h1>Video Aperitivo: Motivação</h1>')
 
 
 def test_conteudo_video(resp):
