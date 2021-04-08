@@ -20,8 +20,8 @@ def test_status_code(resp):
         'Video Aperitivo: Motivação'
     ]
 )
-def test_titulo_video(resp, titulo):
-    assert_contains(resp, titulo)
+def test_titulo_video(resp, slug):
+    assert_contains(resp, slug)
 
 
 @pytest.mark.parametrize(
