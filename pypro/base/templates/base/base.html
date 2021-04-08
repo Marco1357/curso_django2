@@ -36,31 +36,8 @@
   </div>
 </nav>
 
-  {% block body %}{% endblock body %}
-<footer class="main-footer mt-5 pt-4 text-light">
+{% block body %}{% endblock body %}
 
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<h3>Entre em Contato</h3>
-				<address>
-					+55 19 991-734-481
-					<br/>
-					<a href="mailto:miranda_garcya@hotmail.com" class="text-light">miranda_garcya@hotmail.com</a>
-				</address>
-			</div>
-		</div>
-	</div>
-	<div class="rights pb-4">
-	    <div class="container">
-		    <div class="row">
-			    <div class="col">
-                    {% now 'y' %} Python Pro. Todos direitos reservados.
-				</div>
-			</div>
-		</div>
-	</div>
-
-</footer>
+{% include 'base/footer.html' with contato_email='miranda_garcya@hotmail.com' only %}
   </body>
 </html>
