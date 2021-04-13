@@ -27,9 +27,8 @@ def test_titulo_video(resp, slug):
 @pytest.mark.parametrize(
     'slug',
     [
-        'Motivacao'
+        'Motivação'
     ]
 )
 def test_link_video(resp, slug):
-    video_link = reverse('aperitivos:video', args=(slug,))
-    assert_contains(resp, f'href="{video_link}"')
+    assert_contains(resp, f'href="/aperitivos/{slug}"')
