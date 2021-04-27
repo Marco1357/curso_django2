@@ -1,4 +1,6 @@
 # curso_django2
+
+
 Curso Python Pro
 
 Aplicação disponivel em https://pythonmarcodjango.herokuapp.com/
