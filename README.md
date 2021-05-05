@@ -1,5 +1,5 @@
 # curso_django
-marco garcia
+
 Curso Python Pro
 
 Aplicação disponivel em https://pythonmarcodjango.herokuapp.com/
