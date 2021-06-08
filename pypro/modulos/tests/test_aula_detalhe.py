@@ -27,3 +27,11 @@ def test_titulos(resp, aula: Aula):
 
 def test_yuotube(resp, aula: Aula):
     assert_contains(resp, f'src="https://www.youtube.com/embed/{ aula.youtube_id }"')
+
+
+def test_modulo_breadcrumb(resp, modulo: Modulo):
+    assert_contains(resp, f'<li class="breadcrumb-item"><a href="{modulo.get_absolute_url()}')
+
+
+def test_modulo_url(resp, modulo: Modulo):
+    assert_contains(resp, modulo.get_absolute_url())
