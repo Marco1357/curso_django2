@@ -1,7 +1,7 @@
 {% extends 'base/base.html' %}
 {% load static %}
 {% block title %}{{modulo.titulo}}{% endblock title %}
-{% block description %}Página com detalhe do módulo {% endblock description %}
+{% block description %}Página com detalhe do módulo {{ modulo.titulo }} {% endblock description %}
 {%block body %}
   <div class="container">
 	<div class="row">
