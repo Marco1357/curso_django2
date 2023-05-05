@@ -290,11 +290,8 @@
             "version": "==2021.1"
         },
         "s3transfer": {
-            "hashes": [
-                "sha256:9b3752887a2880690ce628bc263d6d13a3864083aeacff4890c1c9839a5eb0bc",
-                "sha256:cb022f4b16551edebbb31a377d3f09600dbada7363d8c5db7976e7f47732e1b2"
-            ],
-            "version": "==0.4.2"
+            "hashes": [],
+            "version": "==0.6.1"
         },
         "sentry-sdk": {
             "hashes": [
