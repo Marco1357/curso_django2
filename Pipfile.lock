@@ -63,12 +63,8 @@
             "version": "==2.2.0"
         },
         "decorator": {
-            "hashes": [
-                "sha256:6e5c199c16f7a9f0e3a61a4a54b3d27e7dad0dbdde92b944426cb20914376323",
-                "sha256:72ecfba4320a893c53f9706bebb2d55c270c1e51a28789361aa93e4a21319ed5"
-            ],
-            "markers": "python_version >= '3.5'",
-            "version": "==5.0.9"
+            "hashes": [],
+            "version": "==5.2.0"
         },
         "dj-database-url": {
             "hashes": [
